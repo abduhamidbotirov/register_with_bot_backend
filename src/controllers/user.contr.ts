@@ -9,7 +9,7 @@ class UserController {
         try {
             const userData: IUser = req.body;
             const newUser = await UserModel.create(userData);
-
+ 
             const bot = new Telegraf(process.env.TG_BOT_TOKEN as string);
             const message = `
                 Yangi foydalanuvchi yaratildi:
