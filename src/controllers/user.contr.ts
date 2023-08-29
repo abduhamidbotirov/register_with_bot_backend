@@ -6,7 +6,7 @@ import { Telegraf } from 'telegraf';
 class UserController {
 
     async createUser(req: Request, res: Response) {
-        try {
+        try { 
             const userData: IUser = req.body;
             const newUser = await UserModel.create(userData);
  
